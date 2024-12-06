@@ -1,0 +1,6 @@
+x canary
+x guess with all colors match in position
+x guess with all colors mismatch
+x guess with all colors match out of position
+x guess with first four colors match in position
+
