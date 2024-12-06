@@ -6,18 +6,18 @@ x guess with all colors mismatch
 
 x guess with all colors match out of position
 
-- guess with first four colors match in position
+x guess with first four colors match in position
 
-- guess with last four colors match in position
+x guess with last four colors match in position
 
-- guess with first three colors match in position and the last three match out of position
+x guess with first three colors match in position and the last three match out of position
 
-- guess gues with first and third color mismatch, second in position, and the others match out of position
+x guess with first and third color mismatch, second in position, and the others match out of position
 
-- guess wit the first color in the selected colors repeated five times
+x guess with the first color in the selected colors repeated five times
 
-- guess with the last color in the selected colors repeated five times
+x guess with the last color in the selected colors repeated five times
 
-- guess with the first color in the selected colors repeated from position two to six, with first position in the guess having the second color in selection
+x guess with the first color in the selected colors repeated from position two to six, with first position in the guess having the second color in selection
 
-- guess with the first color int he selected colors repeated from position two to six, with the first position in the guess having no match
+x guess with the first color int he selected colors repeated from position two to six, with the first position in the guess having no match
