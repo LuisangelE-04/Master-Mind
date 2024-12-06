@@ -21,3 +21,9 @@ x guess with the last color in the selected colors repeated five times
 x guess with the first color in the selected colors repeated from position two to six, with first position in the guess having the second color in selection
 
 x guess with the first color int he selected colors repeated from position two to six, with the first position in the guess having no match
+
+- play 1st attempt all matches
+
+- play 1st attempt no matches
+
+- play 1st attempt with some exact and some non-exact matches

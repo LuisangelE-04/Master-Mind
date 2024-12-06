@@ -1,26 +1,8 @@
 ﻿namespace mastermind;
 
+using static mastermind.ColorMatcher;
+
 public class MasterMind {
-  public static Match MatchForPosition(int positionIndex, IEnumerable<Colors> selectedColors, IEnumerable<Colors> userProvidedColors) {
-    var candidateColor = userProvidedColors.ElementAt(positionIndex);
-
-    if (candidateColor == selectedColors.ElementAt(positionIndex)) {
-      return Match.EXACT;
-    }
-
-    if (userProvidedColors.Take(positionIndex).Contains(candidateColor)) {
-      return Match.NONE;
-    }
-
-    int index = selectedColors.ToList().IndexOf(candidateColor);
-
-    if (index > -1 && selectedColors.ElementAt(index) != userProvidedColors.ElementAt(index)) {
-      return Match.POSITION;
-    }
-
-    return Match.NONE;
-  }
-
   public static Dictionary<Match, int> Guess(List<Colors> selectedColors, List<Colors> userProvidedColors) {
     int MAX_COLORS = 6;
 
