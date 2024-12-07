@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mastermind", "mastermind\ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mastermind.Tests", "mastermind.Tests\mastermind.Tests.csproj", "{C3937CE3-A1DB-4F49-9BFB-C61E2298DEB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mastermind.GUI", "mastermind.GUI\mastermind.GUI.csproj", "{DB24E108-E49B-4EF4-BE25-1DAE649AAD74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C3937CE3-A1DB-4F49-9BFB-C61E2298DEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3937CE3-A1DB-4F49-9BFB-C61E2298DEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3937CE3-A1DB-4F49-9BFB-C61E2298DEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB24E108-E49B-4EF4-BE25-1DAE649AAD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB24E108-E49B-4EF4-BE25-1DAE649AAD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB24E108-E49B-4EF4-BE25-1DAE649AAD74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB24E108-E49B-4EF4-BE25-1DAE649AAD74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
