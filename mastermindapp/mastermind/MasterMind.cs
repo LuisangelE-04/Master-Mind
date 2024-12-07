@@ -1,22 +1,27 @@
 ﻿namespace mastermind;
 
-using static mastermind.ColorMatcher;
+using static mastermind.GuessEvaluator;
 
 public class MasterMind {
-  public static Dictionary<Match, int> Guess(List<Colors> selectedColors, List<Colors> userProvidedColors) {
-    int MAX_COLORS = 6;
+  public static (Dictionary<Match, int> guess, int attempts,  GameStatus status) Play(IEnumerable<Colors> gameSelectedColors, IEnumerable<Colors> userProvidedColors, int attempts) {
+    int MAX_ATTEMTPS = 20, MAX_COLORS = 6;
+    int currentAttempt = attempts + 1;
 
-    var matches = Enumerable.Range(0, MAX_COLORS).Select(positionIndex => MatchForPosition(positionIndex, selectedColors, userProvidedColors));
-    
-    var results = matches.GroupBy(match => match).ToDictionary(group => group.Key, group => group.Count());
-
-    foreach (Match match in Enum.GetValues(typeof(Match))) {
-      if (!results.ContainsKey(match)) {
-        results[match] = 0;
-      }
+    if (currentAttempt > MAX_ATTEMTPS) {
+      throw new InvalidOperationException("You Lost");
     }
 
-    return results;
+    var guessResult = Guess(gameSelectedColors, userProvidedColors);
+
+    if (guessResult[Match.EXACT] == MAX_COLORS) {
+      return (guessResult, currentAttempt, GameStatus.WON);
+    }
+
+    if (currentAttempt == MAX_ATTEMTPS) {
+      return (guessResult, currentAttempt, GameStatus.LOST);
+    }
+
+    return (guessResult, currentAttempt, GameStatus.IN_PROGRESS);
   }
 
 }
