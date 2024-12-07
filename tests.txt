@@ -27,3 +27,19 @@ x play 1st attempt all matches
 x play 1st attempt no matches
 
 x play 1st attempt with some exact and some non-exact matches
+
+- play 2nd attempt with exact match
+
+- play 2nd attempt no matches
+
+- play 20th attempt with exact match
+
+- play 20th attempt with no match
+
+- play 21st attempt with exact match
+
+- playe 21st attempt with no match
+
+- randomize selected colors given
+
+- randomized selected colors are different when called twice
