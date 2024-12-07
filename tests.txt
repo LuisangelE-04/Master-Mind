@@ -22,8 +22,8 @@ x guess with the first color in the selected colors repeated from position two t
 
 x guess with the first color int he selected colors repeated from position two to six, with the first position in the guess having no match
 
-- play 1st attempt all matches
+x play 1st attempt all matches
 
-- play 1st attempt no matches
+x play 1st attempt no matches
 
-- play 1st attempt with some exact and some non-exact matches
+x play 1st attempt with some exact and some non-exact matches
