@@ -28,13 +28,15 @@ x play 1st attempt no matches
 
 x play 1st attempt with some exact and some non-exact matches
 
-- play 2nd attempt with exact match
+x play 2nd attempt with exact match
 
-- play 2nd attempt no matches
+x play 2nd attempt no matches
 
-- play 20th attempt with exact match
+x play 20th attempt with exact match
 
-- play 20th attempt with no match
+x play 20th attempt with no match
+
+x play 20th attempt some matches and some no match
 
 - play 21st attempt with exact match
 
