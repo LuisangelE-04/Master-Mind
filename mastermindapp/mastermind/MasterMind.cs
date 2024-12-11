@@ -8,7 +8,7 @@ public class MasterMind {
     int currentAttempt = attempts + 1;
 
     if (currentAttempt > MAX_ATTEMTPS) {
-      throw new InvalidOperationException("You Lost");
+      throw new InvalidOperationException("Invalid attempt. Already lost.");
     }
 
     var guessResult = Guess(gameSelectedColors, userProvidedColors);

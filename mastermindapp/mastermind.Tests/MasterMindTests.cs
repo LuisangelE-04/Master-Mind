@@ -114,4 +114,25 @@ public class MasterMindTests {
 
     Assert.AreEqual(expectedResult, response);
   }
+
+  [Test]
+  public void PlayTwentyFirstAttemptExactMatchThrowsException() {
+    var selectedColors = new List<Colors> { Red, Blue, Green, Yellow, Purple, Orange };
+    var userProvidedColors = selectedColors;
+    var numberOfAttempts = 20;
+
+    Assert.Throws<InvalidOperationException>(() => 
+      Play(selectedColors, userProvidedColors, numberOfAttempts)
+    );
+  }
+
+  public void PlayTwentyFirstAttemptNoMatchThrowsException() {
+    var selectedColors = new List<Colors> { Red, Blue, Green, Yellow, Purple, Orange };
+    var userProvidedColors = new List<Colors> { Pink, Black, Silver, Pink, Black, Brown };
+    var numberOfAttempts = 20;
+
+    Assert.Throws<InvalidOperationException>(() => 
+      Play(selectedColors, userProvidedColors, numberOfAttempts)
+    );
+  }
 }

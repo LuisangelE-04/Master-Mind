@@ -38,9 +38,9 @@ x play 20th attempt with no match
 
 x play 20th attempt some matches and some no match
 
-- play 21st attempt with exact match
+x play 21st attempt with exact match
 
-- playe 21st attempt with no match
+x play 21st attempt with no match
 
 - randomize selected colors given
 
