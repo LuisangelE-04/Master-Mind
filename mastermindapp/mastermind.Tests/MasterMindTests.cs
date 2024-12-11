@@ -154,6 +154,6 @@ public class MasterMindTests {
     var selectedColors = ColorGenerator(seed1);
     var selectedColorsAgain = ColorGenerator(seed2);
 
-    Assert.AreNotEqual(selectedColors, selectedColorsAgain);
+    Assert.That(selectedColors, Is.Not.EqualTo(selectedColorsAgain));
   }
 }
