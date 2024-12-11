@@ -42,6 +42,6 @@ x play 21st attempt with exact match
 
 x play 21st attempt with no match
 
-- randomize selected colors given
+x randomize selected colors given produces 6 colors
 
-- randomized selected colors are different when called twice
+x randomized selected colors are different when called twice

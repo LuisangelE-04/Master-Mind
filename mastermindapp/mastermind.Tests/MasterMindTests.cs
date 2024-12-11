@@ -126,6 +126,7 @@ public class MasterMindTests {
     );
   }
 
+  [Test]
   public void PlayTwentyFirstAttemptNoMatchThrowsException() {
     var selectedColors = new List<Colors> { Red, Blue, Green, Yellow, Purple, Orange };
     var userProvidedColors = new List<Colors> { Pink, Black, Silver, Pink, Black, Brown };
@@ -134,5 +135,25 @@ public class MasterMindTests {
     Assert.Throws<InvalidOperationException>(() => 
       Play(selectedColors, userProvidedColors, numberOfAttempts)
     );
+  }
+
+  [Test]
+  public void RandomizeSelectedColorsProducesSixColors() {
+    var seed = 24;
+    var numberOfColors = 6;
+    var selectedColors = ColorGenerator(seed);
+
+    Assert.AreEqual(numberOfColors, selectedColors.Count);
+  }
+
+  [Test]
+  public void RandomizeSelectedColorsProducesDifferentVariation() {
+    var seed1 = 24;
+    var seed2 = 4;
+
+    var selectedColors = ColorGenerator(seed1);
+    var selectedColorsAgain = ColorGenerator(seed2);
+
+    Assert.AreNotEqual(selectedColors, selectedColorsAgain);
   }
 }
